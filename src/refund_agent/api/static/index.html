@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Refund Agent - Dashboard & Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="brand-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+      </div>
+      <div>
+        <h1 class="brand-title">Grocery Refund Assistant</h1>
+        <p class="brand-subtitle">LangGraph State Machine • DeepSeek LLM • Automated Verification</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="status-badge" id="apiStatusBadge">
+        <span class="status-dot"></span>
+        <span id="apiStatusText">Checking API...</span>
+      </div>
+      <a href="/docs" target="_blank" class="nav-link" title="Open Swagger Documentation">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Swagger Docs
+      </a>
+      <button id="resetChatBtn" class="secondary-btn" title="Start a new conversation thread">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+        New Session
+      </button>
+    </div>
+  </header>
+
+  <!-- 3-Column Main Dashboard Layout -->
+  <main class="dashboard-grid">
+    
+    <!-- LEFT COLUMN: Demo Customers & Store Policy -->
+    <aside class="sidebar-col">
+      <!-- Demo Customers Card -->
+      <section class="card demo-card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="card-icon blue-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <div>
+              <h2>Demo Test Customers</h2>
+              <p class="card-subtitle">Click a customer to test agent behavior</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="customers-list">
+          <!-- Customer 1: Eligible -->
+          <div class="customer-box eligible-box" id="custAlex">
+            <div class="cust-box-top">
+              <div class="cust-identity">
+                <span class="cust-avatar green-avatar">AT</span>
+                <div>
+                  <h3 class="cust-name">Alex Taylor</h3>
+                  <code class="cust-username">alextaylor1001</code>
+                </div>
+              </div>
+              <span class="pill pill-success">Eligible</span>
+            </div>
+            
+            <div class="cust-meta">
+              <div class="meta-row">
+                <span class="meta-label">Purchase Date:</span>
+                <span class="meta-val font-semibold">2026-10-24 <span class="tag-fresh">(2 days ago)</span></span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Order ID:</span>
+                <span class="meta-val">#1001 • $72.75</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Purchased:</span>
+                <span class="meta-val text-truncate">Ground Beef (3), Greek Yogurt (1), Orange Juice (4), Sourdough...</span>
+              </div>
+            </div>
+
+            <div class="cust-actions">
+              <button class="action-btn eligible-btn" onclick="app.selectCustomer('alextaylor1001', 'Alex Taylor', true)">
+                <span>Test as Alex (Eligible)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Customer 2: Ineligible -->
+          <div class="customer-box ineligible-box" id="custJordan">
+            <div class="cust-box-top">
+              <div class="cust-identity">
+                <span class="cust-avatar red-avatar">JM</span>
+                <div>
+                  <h3 class="cust-name">Jordan Miller</h3>
+                  <code class="cust-username">jordanmiller1002</code>
+                </div>
+              </div>
+              <span class="pill pill-danger">Ineligible</span>
+            </div>
+            
+            <div class="cust-meta">
+              <div class="meta-row">
+                <span class="meta-label">Purchase Date:</span>
+                <span class="meta-val text-danger font-semibold">2026-10-02 <span class="tag-expired">(24 days ago)</span></span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Order ID:</span>
+                <span class="meta-val">#1002 • $94.43</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Purchased:</span>
+                <span class="meta-val text-truncate">Atlantic Salmon (4), Sparkling Water (1), Ground Beef (2)...</span>
+              </div>
+            </div>
+
+            <div class="ineligible-notice">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Outside 7-day refund window. Agent should strictly deny.</span>
+            </div>
+
+            <div class="cust-actions">
+              <button class="action-btn ineligible-btn" onclick="app.selectCustomer('jordanmiller1002', 'Jordan Miller', false)">
+                <span>Test as Jordan (Ineligible)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Store Policy Guidelines -->
+      <section class="card policy-card">
+        <div class="card-header-compact">
+          <span class="card-icon amber-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <h3>Store Refund Policy</h3>
+        </div>
+        <ul class="policy-list">
+          <li>
+            <span class="bullet bullet-green">✓</span>
+            <div><strong>7-Day Window:</strong> Purchases made within the last 7 calendar days only.</div>
+          </li>
+          <li>
+            <span class="bullet bullet-green">✓</span>
+            <div><strong>Approved Reasons:</strong> Expired, Damaged (spoiled/leaking), or Wrong item delivered.</div>
+          </li>
+          <li>
+            <span class="bullet bullet-red">✗</span>
+            <div><strong>Denied Reasons:</strong> Change of mind, found cheaper, taste, or accidental order.</div>
+          </li>
+          <li>
+            <span class="bullet bullet-slate">🔒</span>
+            <div><strong>Idempotent Finality:</strong> Decisions cannot be altered once finalized.</div>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- CENTER COLUMN: Interactive Chatbot Area -->
+    <section class="chat-col">
+      <div class="card chat-card">
+        <!-- Chat Header -->
+        <div class="chat-header">
+          <div class="agent-profile">
+            <div class="agent-avatar">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8.01" y2="16"/><line x1="16" y1="16" x2="16.01" y2="16"/></svg>
+            </div>
+            <div>
+              <div class="agent-title-row">
+                <h3>Refund Assistant</h3>
+                <span class="online-pill">Active</span>
+              </div>
+              <div class="chat-thread-meta">
+                <span>Thread:</span> <code id="activeThreadId">initial</code>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Stage Pill -->
+          <div class="stage-container">
+            <span class="stage-label">Current Step:</span>
+            <span id="currentStageBadge" class="stage-pill stage-neutral">Awaiting Username</span>
+          </div>
+        </div>
+
+        <!-- Chat Messages Scrollable Container -->
+        <div class="chat-messages" id="chatMessages">
+          <!-- Initial Welcome Message -->
+          <div class="msg-row bot-row">
+            <div class="msg-avatar bot-avatar">AI</div>
+            <div class="msg-bubble bot-bubble">
+              <div class="msg-sender">Refund Assistant</div>
+              <p>Hello! Welcome to the online grocery refund service. I can help you verify your order and process refunds for damaged, expired, or incorrect products.</p>
+              <p class="msg-hint">Could you please provide your <strong>username</strong> to look up your purchase?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Suggestion Action Chips -->
+        <div class="quick-chips-row" id="quickChipsRow">
+          <span class="chips-label">Suggestions:</span>
+          <div class="chips-list" id="chipsList">
+            <button class="chip-btn" onclick="app.sendQuickPrompt('My username is alextaylor1001')">👤 alextaylor1001 (Eligible)</button>
+            <button class="chip-btn" onclick="app.sendQuickPrompt('My username is jordanmiller1002')">👤 jordanmiller1002 (Ineligible)</button>
+          </div>
+        </div>
+
+        <!-- Chat Input Bar -->
+        <form class="chat-input-bar" id="chatForm">
+          <input 
+            type="text" 
+            id="userInput" 
+            placeholder="Type your message (e.g. My username is alextaylor1001)..." 
+            autocomplete="off"
+            required
+          >
+          <button type="submit" id="sendBtn" class="send-btn" title="Send message">
+            <span>Send</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- RIGHT COLUMN: Evaluation Report Panel -->
+    <aside class="sidebar-col eval-col">
+      <div class="card eval-card">
+        <!-- Card Header -->
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="card-icon purple-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </span>
+            <div>
+              <h2>Agent Evaluation Report</h2>
+              <p class="card-subtitle">DeepEval Verification & Metrics</p>
+            </div>
+          </div>
+          <a href="/api/eval-report" target="_blank" class="download-link" title="Open original PDF in new tab">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            <span>PDF</span>
+          </a>
+        </div>
+
+        <!-- Tab Controls -->
+        <div class="eval-tabs">
+          <button class="eval-tab-btn active" data-tab="overview" onclick="app.switchEvalTab('overview')">Metrics Overview</button>
+          <button class="eval-tab-btn" data-tab="pdf" onclick="app.switchEvalTab('pdf')">Embedded PDF</button>
+          <button class="eval-tab-btn" data-tab="logs" onclick="app.switchEvalTab('logs')">Test Highlights</button>
+        </div>
+
+        <!-- TAB 1: Metrics Overview -->
+        <div class="tab-pane active" id="pane-overview">
+          <!-- Summary Metric Cards -->
+          <div class="eval-stats-grid">
+            <div class="stat-card">
+              <span class="stat-num text-success">89.1%</span>
+              <span class="stat-lbl">DeepEval Pass Rate</span>
+              <span class="stat-sub">57 of 64 passed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num text-primary">100%</span>
+              <span class="stat-lbl">Deterministic Checks</span>
+              <span class="stat-sub">64 / 64 exact assertions</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num text-purple">0.98</span>
+              <span class="stat-lbl">Tool Correctness</span>
+              <span class="stat-sub">62/64 pass (96.9%)</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num text-amber">0.91</span>
+              <span class="stat-lbl">Answer GEval</span>
+              <span class="stat-sub">59/64 pass (92.2%)</span>
+            </div>
+          </div>
+
+          <!-- Evaluation Highlights List -->
+          <div class="eval-breakdown">
+            <h4>Verified Agent Capabilities</h4>
+            <div class="capability-item">
+              <span class="cap-check">✓</span>
+              <div>
+                <strong>Strict 7-Day Window Enforcement:</strong>
+                <p>Deterministically rejects any order older than 7 calendar days before any refund calculation.</p>
+              </div>
+            </div>
+            <div class="capability-item">
+              <span class="cap-check">✓</span>
+              <div>
+                <strong>Fuzzy Catalog Matching:</strong>
+                <p>Safely matches user-stated items against purchase history (difflib 0.8 cutoff), rejecting ambiguities.</p>
+              </div>
+            </div>
+            <div class="capability-item">
+              <span class="cap-check">✓</span>
+              <div>
+                <strong>Mathematical Refund Accuracy:</strong>
+                <p>Caps requested quantities to purchased amounts, sums duplicates, and ignores zero/negative numbers.</p>
+              </div>
+            </div>
+            <div class="capability-item">
+              <span class="cap-check">✓</span>
+              <div>
+                <strong>Prompt Injection & Override Defense:</strong>
+                <p>Resists 'SYSTEM OVERRIDE' jailbreaks; maintains strict reason categorization and finality.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: Embedded PDF Viewer -->
+        <div class="tab-pane" id="pane-pdf">
+          <div class="pdf-container">
+            <iframe 
+              src="/api/eval-report#toolbar=0&navpanes=0" 
+              title="Agent Evaluation Report PDF"
+              class="pdf-frame"
+              id="pdfFrame"
+            ></iframe>
+            <div class="pdf-fallback">
+              <p>Viewing <strong>eval_report.pdf</strong></p>
+              <a href="/api/eval-report" target="_blank" class="secondary-btn">Open Full Screen PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: Test Highlights / Logs -->
+        <div class="tab-pane" id="pane-logs">
+          <div class="logs-container">
+            <div class="log-card pass-log">
+              <div class="log-header">
+                <span class="badge badge-pass">PASS 1.0</span>
+                <span class="log-title">test_case_2: Duplicate Item Summation</span>
+              </div>
+              <p class="log-desc">Correctly aggregates duplicate Ground Beef entries to quantity 2, calculates exact refund amount ($13.98), and proceeds to reason verification.</p>
+            </div>
+            
+            <div class="log-card pass-log">
+              <div class="log-header">
+                <span class="badge badge-pass">PASS 1.0</span>
+                <span class="log-title">test_case_11: Spoiled / Damaged Approval</span>
+              </div>
+              <p class="log-desc">Correctly recognizes customer's claim of 'package arrived spoiled' as valid damage, approving exact refund of $1.79.</p>
+            </div>
+
+            <div class="log-card pass-log">
+              <div class="log-header">
+                <span class="badge badge-pass">PASS 0.9</span>
+                <span class="log-title">test_case_13: Change of Mind Denial</span>
+              </div>
+              <p class="log-desc">Correctly denies refund when customer states 'changed my mind', setting refund payout to $0.00 in state.</p>
+            </div>
+
+            <div class="log-card pass-log">
+              <div class="log-header">
+                <span class="badge badge-pass">PASS 1.0</span>
+                <span class="log-title">test_case_23: Post-Decision Idempotency</span>
+              </div>
+              <p class="log-desc">Once decision is rendered, user cannot flip their reason to bypass denial. System responds with fixed finality message.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

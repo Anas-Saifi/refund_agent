@@ -1,0 +1,29 @@
+[project]
+name = "refund-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Anas Saifi", email = "anas.saifi123456786@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "deepeval>=4.3.1",
+    "fastapi>=0.115.0",
+    "langchain>=1.4.7",
+    "langchain-core>=1.7.0",
+    "langchain-openai>=1.7.2",
+    "langgraph>=1.2.16",
+    "python-dotenv>=1.2.4",
+    "tzdata>=2026.5",
+    "uvicorn[standard]>=0.32.0",
+]
+
+[project.scripts]
+refund-agent = "refund_agent:main"
+refund-server = "refund_agent.api.main:start"
+
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"

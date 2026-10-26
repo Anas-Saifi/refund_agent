@@ -1,0 +1,2154 @@
+{
+  "customers": [
+    {
+      "name": "Alex Taylor",
+      "order_id": 1001,
+      "date_of_purchase": "2026-10-24",
+      "items": [
+        {
+          "item": "Ground Beef",
+          "quantity": 3,
+          "price": 6.99
+        },
+        {
+          "item": "Greek Yogurt",
+          "quantity": 1,
+          "price": 5.49
+        },
+        {
+          "item": "Orange Juice",
+          "quantity": 4,
+          "price": 4.49
+        },
+        {
+          "item": "Diced Tomatoes",
+          "quantity": 1,
+          "price": 1.39
+        },
+        {
+          "item": "Sourdough Bread",
+          "quantity": 4,
+          "price": 4.99
+        },
+        {
+          "item": "Green Tea",
+          "quantity": 2,
+          "price": 3.49
+        }
+      ],
+      "total_amount": 72.75,
+      "username": "alextaylor1001"
+    },
+    {
+      "name": "Jordan Miller",
+      "order_id": 1002,
+      "date_of_purchase": "2026-10-02",
+      "items": [
+        {
+          "item": "Atlantic Salmon",
+          "quantity": 4,
+          "price": 12.99
+        },
+        {
+          "item": "Sparkling Water",
+          "quantity": 1,
+          "price": 4.99
+        },
+        {
+          "item": "Ground Beef",
+          "quantity": 2,
+          "price": 6.99
+        },
+        {
+          "item": "Green Tea",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Diced Tomatoes",
+          "quantity": 4,
+          "price": 1.39
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 2,
+          "price": 1.99
+        }
+      ],
+      "total_amount": 94.43,
+      "username": "jordanmiller1002"
+    },
+    {
+      "name": "Morgan Davis",
+      "order_id": 1003,
+      "date_of_purchase": "2026-09-23",
+      "items": [
+        {
+          "item": "Rolled Oats",
+          "quantity": 1,
+          "price": 3.79
+        },
+        {
+          "item": "Atlantic Salmon",
+          "quantity": 3,
+          "price": 12.99
+        },
+        {
+          "item": "Large Eggs",
+          "quantity": 3,
+          "price": 3.99
+        },
+        {
+          "item": "Green Tea",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Baby Spinach",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Ground Beef",
+          "quantity": 3,
+          "price": 6.99
+        },
+        {
+          "item": "Russet Potatoes",
+          "quantity": 3,
+          "price": 4.49
+        },
+        {
+          "item": "Tomato Soup",
+          "quantity": 3,
+          "price": 1.99
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 3,
+          "price": 1.99
+        }
+      ],
+      "total_amount": 115.07,
+      "username": "morgandavis1003"
+    },
+    {
+      "name": "Casey Wilson",
+      "order_id": 1004,
+      "date_of_purchase": "2026-09-23",
+      "items": [
+        {
+          "item": "Toilet Paper",
+          "quantity": 1,
+          "price": 7.99
+        },
+        {
+          "item": "Yellow Mustard",
+          "quantity": 1,
+          "price": 1.79
+        },
+        {
+          "item": "Strawberry Jam",
+          "quantity": 3,
+          "price": 3.79
+        },
+        {
+          "item": "Chicken Breast",
+          "quantity": 2,
+          "price": 5.49
+        },
+        {
+          "item": "Large Eggs",
+          "quantity": 1,
+          "price": 3.99
+        },
+        {
+          "item": "Greek Yogurt",
+          "quantity": 2,
+          "price": 5.49
+        }
+      ],
+      "total_amount": 47.1,
+      "username": "caseywilson1004"
+    },
+    {
+      "name": "Riley Moore",
+      "order_id": 1005,
+      "date_of_purchase": "2026-10-07",
+      "items": [
+        {
+          "item": "Sourdough Bread",
+          "quantity": 4,
+          "price": 4.99
+        },
+        {
+          "item": "Honey",
+          "quantity": 4,
+          "price": 5.49
+        },
+        {
+          "item": "Mayonnaise",
+          "quantity": 4,
+          "price": 4.49
+        },
+        {
+          "item": "Table Salt",
+          "quantity": 4,
+          "price": 1.29
+        },
+        {
+          "item": "Toothpaste",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Peanut Butter",
+          "quantity": 1,
+          "price": 3.49
+        },
+        {
+          "item": "Black Beans",
+          "quantity": 2,
+          "price": 1.49
+        },
+        {
+          "item": "Chicken Breast",
+          "quantity": 3,
+          "price": 5.49
+        },
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 2,
+          "price": 2.99
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 2,
+          "price": 1.99
+        }
+      ],
+      "total_amount": 111.9,
+      "username": "rileymoore1005"
+    },
+    {
+      "name": "Jamie Anderson",
+      "order_id": 1006,
+      "date_of_purchase": "2026-09-30",
+      "items": [
+        {
+          "item": "Broccoli",
+          "quantity": 2,
+          "price": 2.29
+        },
+        {
+          "item": "Seedless Grapes",
+          "quantity": 1,
+          "price": 5.99
+        },
+        {
+          "item": "Orange Juice",
+          "quantity": 4,
+          "price": 4.49
+        },
+        {
+          "item": "Gala Apples",
+          "quantity": 2,
+          "price": 4.99
+        },
+        {
+          "item": "All-Purpose Flour",
+          "quantity": 3,
+          "price": 4.29
+        },
+        {
+          "item": "Yellow Mustard",
+          "quantity": 1,
+          "price": 1.79
+        }
+      ],
+      "total_amount": 53.17,
+      "username": "jamieanderson1006"
+    },
+    {
+      "name": "Avery Thomas",
+      "order_id": 1007,
+      "date_of_purchase": "2026-09-26",
+      "items": [
+        {
+          "item": "Green Tea",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Whole Milk",
+          "quantity": 3,
+          "price": 4.29
+        },
+        {
+          "item": "Honey",
+          "quantity": 2,
+          "price": 5.49
+        },
+        {
+          "item": "Black Beans",
+          "quantity": 3,
+          "price": 1.49
+        },
+        {
+          "item": "Gala Apples",
+          "quantity": 4,
+          "price": 4.99
+        },
+        {
+          "item": "Toothpaste",
+          "quantity": 1,
+          "price": 3.49
+        },
+        {
+          "item": "Diced Tomatoes",
+          "quantity": 1,
+          "price": 1.39
+        },
+        {
+          "item": "Dish Soap",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Granulated Sugar",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Ground Coffee",
+          "quantity": 1,
+          "price": 9.99
+        }
+      ],
+      "total_amount": 98.05,
+      "username": "averythomas1007"
+    },
+    {
+      "name": "Taylor Jackson",
+      "order_id": 1008,
+      "date_of_purchase": "2026-10-21",
+      "items": [
+        {
+          "item": "Navel Oranges",
+          "quantity": 2,
+          "price": 4.99
+        },
+        {
+          "item": "Rolled Oats",
+          "quantity": 1,
+          "price": 3.79
+        },
+        {
+          "item": "Ground Beef",
+          "quantity": 4,
+          "price": 6.99
+        },
+        {
+          "item": "Baby Spinach",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Tomato Soup",
+          "quantity": 1,
+          "price": 1.99
+        },
+        {
+          "item": "Green Tea",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 3,
+          "price": 1.99
+        },
+        {
+          "item": "Atlantic Salmon",
+          "quantity": 1,
+          "price": 12.99
+        },
+        {
+          "item": "Yellow Mustard",
+          "quantity": 1,
+          "price": 1.79
+        }
+      ],
+      "total_amount": 85.41,
+      "username": "taylorjackson1008"
+    },
+    {
+      "name": "Cameron White",
+      "order_id": 1009,
+      "date_of_purchase": "2026-09-26",
+      "items": [
+        {
+          "item": "Dish Soap",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Whole Milk",
+          "quantity": 1,
+          "price": 4.29
+        },
+        {
+          "item": "Cheddar Cheese",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Chicken Breast",
+          "quantity": 1,
+          "price": 5.49
+        },
+        {
+          "item": "Green Tea",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Diced Tomatoes",
+          "quantity": 3,
+          "price": 1.39
+        }
+      ],
+      "total_amount": 34.89,
+      "username": "cameronwhite1009"
+    },
+    {
+      "name": "Drew Harris",
+      "order_id": 1010,
+      "date_of_purchase": "2026-10-04",
+      "items": [
+        {
+          "item": "Table Salt",
+          "quantity": 1,
+          "price": 1.29
+        },
+        {
+          "item": "Yellow Onions",
+          "quantity": 2,
+          "price": 2.99
+        },
+        {
+          "item": "Russet Potatoes",
+          "quantity": 2,
+          "price": 4.49
+        },
+        {
+          "item": "All-Purpose Flour",
+          "quantity": 2,
+          "price": 4.29
+        },
+        {
+          "item": "Toilet Paper",
+          "quantity": 1,
+          "price": 7.99
+        }
+      ],
+      "total_amount": 32.82,
+      "username": "drewharris1010"
+    },
+    {
+      "name": "Parker Martin",
+      "order_id": 1011,
+      "date_of_purchase": "2026-10-22",
+      "items": [
+        {
+          "item": "Large Eggs",
+          "quantity": 3,
+          "price": 3.99
+        },
+        {
+          "item": "All-Purpose Flour",
+          "quantity": 1,
+          "price": 4.29
+        },
+        {
+          "item": "Chicken Breast",
+          "quantity": 1,
+          "price": 5.49
+        },
+        {
+          "item": "Dish Soap",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Broccoli",
+          "quantity": 4,
+          "price": 2.29
+        },
+        {
+          "item": "Seedless Grapes",
+          "quantity": 2,
+          "price": 5.99
+        },
+        {
+          "item": "Canned Tuna",
+          "quantity": 1,
+          "price": 1.79
+        },
+        {
+          "item": "Ground Coffee",
+          "quantity": 4,
+          "price": 9.99
+        }
+      ],
+      "total_amount": 95.11,
+      "username": "parkermartin1011"
+    },
+    {
+      "name": "Quinn Thompson",
+      "order_id": 1012,
+      "date_of_purchase": "2026-10-09",
+      "items": [
+        {
+          "item": "Bananas",
+          "quantity": 3,
+          "price": 0.69
+        },
+        {
+          "item": "Gala Apples",
+          "quantity": 2,
+          "price": 4.99
+        },
+        {
+          "item": "Tomato Soup",
+          "quantity": 3,
+          "price": 1.99
+        },
+        {
+          "item": "Potato Chips",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 3,
+          "price": 1.99
+        },
+        {
+          "item": "Greek Yogurt",
+          "quantity": 2,
+          "price": 5.49
+        },
+        {
+          "item": "Dark Chocolate Bar",
+          "quantity": 3,
+          "price": 2.99
+        }
+      ],
+      "total_amount": 57.9,
+      "username": "quinnthompson1012"
+    },
+    {
+      "name": "Reese Garcia",
+      "order_id": 1013,
+      "date_of_purchase": "2026-10-07",
+      "items": [
+        {
+          "item": "Green Tea",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Navel Oranges",
+          "quantity": 2,
+          "price": 4.99
+        },
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 1,
+          "price": 2.99
+        },
+        {
+          "item": "Sparkling Water",
+          "quantity": 3,
+          "price": 4.99
+        },
+        {
+          "item": "Toilet Paper",
+          "quantity": 3,
+          "price": 7.99
+        },
+        {
+          "item": "Olive Oil",
+          "quantity": 3,
+          "price": 8.99
+        }
+      ],
+      "total_amount": 92.84,
+      "username": "reesegarcia1013"
+    },
+    {
+      "name": "Rowan Martinez",
+      "order_id": 1014,
+      "date_of_purchase": "2026-10-08",
+      "items": [
+        {
+          "item": "Yellow Mustard",
+          "quantity": 4,
+          "price": 1.79
+        },
+        {
+          "item": "Ground Beef",
+          "quantity": 2,
+          "price": 6.99
+        },
+        {
+          "item": "Rolled Oats",
+          "quantity": 4,
+          "price": 3.79
+        },
+        {
+          "item": "Hand Soap",
+          "quantity": 3,
+          "price": 2.99
+        },
+        {
+          "item": "Peanut Butter",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Strawberries",
+          "quantity": 4,
+          "price": 4.49
+        },
+        {
+          "item": "Orange Juice",
+          "quantity": 3,
+          "price": 4.49
+        }
+      ],
+      "total_amount": 87.17,
+      "username": "rowanmartinez1014"
+    },
+    {
+      "name": "Skyler Robinson",
+      "order_id": 1015,
+      "date_of_purchase": "2026-10-19",
+      "items": [
+        {
+          "item": "Yellow Mustard",
+          "quantity": 3,
+          "price": 1.79
+        },
+        {
+          "item": "Roma Tomatoes",
+          "quantity": 1,
+          "price": 2.49
+        },
+        {
+          "item": "Broccoli",
+          "quantity": 1,
+          "price": 2.29
+        },
+        {
+          "item": "Olive Oil",
+          "quantity": 1,
+          "price": 8.99
+        }
+      ],
+      "total_amount": 19.14,
+      "username": "skylerrobinson1015"
+    },
+    {
+      "name": "Emerson Clark",
+      "order_id": 1016,
+      "date_of_purchase": "2026-10-06",
+      "items": [
+        {
+          "item": "Dark Chocolate Bar",
+          "quantity": 2,
+          "price": 2.99
+        },
+        {
+          "item": "Russet Potatoes",
+          "quantity": 3,
+          "price": 4.49
+        },
+        {
+          "item": "Strawberries",
+          "quantity": 1,
+          "price": 4.49
+        },
+        {
+          "item": "Salted Butter",
+          "quantity": 3,
+          "price": 4.49
+        },
+        {
+          "item": "Seedless Grapes",
+          "quantity": 1,
+          "price": 5.99
+        },
+        {
+          "item": "Olive Oil",
+          "quantity": 1,
+          "price": 8.99
+        },
+        {
+          "item": "Canned Tuna",
+          "quantity": 2,
+          "price": 1.79
+        }
+      ],
+      "total_amount": 55.97,
+      "username": "emersonclark1016"
+    },
+    {
+      "name": "Finley Rodriguez",
+      "order_id": 1017,
+      "date_of_purchase": "2026-09-28",
+      "items": [
+        {
+          "item": "Chicken Breast",
+          "quantity": 3,
+          "price": 5.49
+        },
+        {
+          "item": "Orange Juice",
+          "quantity": 3,
+          "price": 4.49
+        },
+        {
+          "item": "Yellow Onions",
+          "quantity": 1,
+          "price": 2.99
+        },
+        {
+          "item": "Black Pepper",
+          "quantity": 1,
+          "price": 3.99
+        },
+        {
+          "item": "Table Salt",
+          "quantity": 4,
+          "price": 1.29
+        },
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 4,
+          "price": 2.99
+        },
+        {
+          "item": "Dark Chocolate Bar",
+          "quantity": 4,
+          "price": 2.99
+        }
+      ],
+      "total_amount": 66.0,
+      "username": "finleyrodriguez1017"
+    },
+    {
+      "name": "Hayden Lewis",
+      "order_id": 1018,
+      "date_of_purchase": "2026-10-01",
+      "items": [
+        {
+          "item": "Almonds",
+          "quantity": 4,
+          "price": 5.99
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 4,
+          "price": 1.99
+        },
+        {
+          "item": "Strawberry Jam",
+          "quantity": 1,
+          "price": 3.79
+        },
+        {
+          "item": "Yellow Onions",
+          "quantity": 4,
+          "price": 2.99
+        },
+        {
+          "item": "Strawberries",
+          "quantity": 2,
+          "price": 4.49
+        }
+      ],
+      "total_amount": 56.65,
+      "username": "haydenlewis1018"
+    },
+    {
+      "name": "Kendall Lee",
+      "order_id": 1019,
+      "date_of_purchase": "2026-10-08",
+      "items": [
+        {
+          "item": "Ground Beef",
+          "quantity": 2,
+          "price": 6.99
+        },
+        {
+          "item": "Salted Butter",
+          "quantity": 3,
+          "price": 4.49
+        },
+        {
+          "item": "Yellow Onions",
+          "quantity": 1,
+          "price": 2.99
+        },
+        {
+          "item": "Toilet Paper",
+          "quantity": 2,
+          "price": 7.99
+        },
+        {
+          "item": "Sparkling Water",
+          "quantity": 1,
+          "price": 4.99
+        },
+        {
+          "item": "Almonds",
+          "quantity": 3,
+          "price": 5.99
+        },
+        {
+          "item": "Granulated Sugar",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Gala Apples",
+          "quantity": 2,
+          "price": 4.99
+        },
+        {
+          "item": "Greek Yogurt",
+          "quantity": 2,
+          "price": 5.49
+        },
+        {
+          "item": "Large Eggs",
+          "quantity": 2,
+          "price": 3.99
+        }
+      ],
+      "total_amount": 108.79,
+      "username": "kendalllee1019"
+    },
+    {
+      "name": "Payton Walker",
+      "order_id": 1020,
+      "date_of_purchase": "2026-09-23",
+      "items": [
+        {
+          "item": "Yellow Mustard",
+          "quantity": 4,
+          "price": 1.79
+        },
+        {
+          "item": "Yellow Onions",
+          "quantity": 4,
+          "price": 2.99
+        },
+        {
+          "item": "Black Beans",
+          "quantity": 2,
+          "price": 1.49
+        },
+        {
+          "item": "Laundry Detergent",
+          "quantity": 3,
+          "price": 8.99
+        },
+        {
+          "item": "Ground Beef",
+          "quantity": 3,
+          "price": 6.99
+        },
+        {
+          "item": "Almonds",
+          "quantity": 2,
+          "price": 5.99
+        },
+        {
+          "item": "Dish Soap",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Salted Butter",
+          "quantity": 1,
+          "price": 4.49
+        }
+      ],
+      "total_amount": 96.98,
+      "username": "paytonwalker1020"
+    },
+    {
+      "name": "Blake Hall",
+      "order_id": 1021,
+      "date_of_purchase": "2026-10-18",
+      "items": [
+        {
+          "item": "Seedless Grapes",
+          "quantity": 1,
+          "price": 5.99
+        },
+        {
+          "item": "Broccoli",
+          "quantity": 3,
+          "price": 2.29
+        },
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 3,
+          "price": 2.99
+        },
+        {
+          "item": "Baby Spinach",
+          "quantity": 1,
+          "price": 3.49
+        }
+      ],
+      "total_amount": 25.32,
+      "username": "blakehall1021"
+    },
+    {
+      "name": "Dakota Allen",
+      "order_id": 1022,
+      "date_of_purchase": "2026-10-09",
+      "items": [
+        {
+          "item": "Greek Yogurt",
+          "quantity": 3,
+          "price": 5.49
+        },
+        {
+          "item": "Yellow Onions",
+          "quantity": 1,
+          "price": 2.99
+        },
+        {
+          "item": "Atlantic Salmon",
+          "quantity": 3,
+          "price": 12.99
+        },
+        {
+          "item": "Green Tea",
+          "quantity": 4,
+          "price": 3.49
+        }
+      ],
+      "total_amount": 72.39,
+      "username": "dakotaallen1022"
+    },
+    {
+      "name": "Sage Young",
+      "order_id": 1023,
+      "date_of_purchase": "2026-10-11",
+      "items": [
+        {
+          "item": "Cheddar Cheese",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 3,
+          "price": 1.99
+        },
+        {
+          "item": "Navel Oranges",
+          "quantity": 1,
+          "price": 4.99
+        },
+        {
+          "item": "Granulated Sugar",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Dish Soap",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Strawberries",
+          "quantity": 1,
+          "price": 4.49
+        },
+        {
+          "item": "Table Salt",
+          "quantity": 3,
+          "price": 1.29
+        },
+        {
+          "item": "Greek Yogurt",
+          "quantity": 3,
+          "price": 5.49
+        },
+        {
+          "item": "Strawberry Jam",
+          "quantity": 3,
+          "price": 3.79
+        }
+      ],
+      "total_amount": 68.1,
+      "username": "sageyoung1023"
+    },
+    {
+      "name": "Elliot Hernandez",
+      "order_id": 1024,
+      "date_of_purchase": "2026-10-15",
+      "items": [
+        {
+          "item": "Sparkling Water",
+          "quantity": 2,
+          "price": 4.99
+        },
+        {
+          "item": "Strawberry Jam",
+          "quantity": 1,
+          "price": 3.79
+        },
+        {
+          "item": "Canned Tuna",
+          "quantity": 4,
+          "price": 1.79
+        },
+        {
+          "item": "Large Eggs",
+          "quantity": 3,
+          "price": 3.99
+        },
+        {
+          "item": "Olive Oil",
+          "quantity": 4,
+          "price": 8.99
+        }
+      ],
+      "total_amount": 68.86,
+      "username": "elliothernandez1024"
+    },
+    {
+      "name": "Phoenix King",
+      "order_id": 1025,
+      "date_of_purchase": "2026-10-11",
+      "items": [
+        {
+          "item": "Yellow Mustard",
+          "quantity": 3,
+          "price": 1.79
+        },
+        {
+          "item": "Rolled Oats",
+          "quantity": 2,
+          "price": 3.79
+        },
+        {
+          "item": "Atlantic Salmon",
+          "quantity": 2,
+          "price": 12.99
+        },
+        {
+          "item": "Green Tea",
+          "quantity": 1,
+          "price": 3.49
+        }
+      ],
+      "total_amount": 42.42,
+      "username": "phoenixking1025"
+    },
+    {
+      "name": "Remy Wright",
+      "order_id": 1026,
+      "date_of_purchase": "2026-09-30",
+      "items": [
+        {
+          "item": "Strawberry Jam",
+          "quantity": 3,
+          "price": 3.79
+        },
+        {
+          "item": "Large Eggs",
+          "quantity": 2,
+          "price": 3.99
+        },
+        {
+          "item": "Laundry Detergent",
+          "quantity": 2,
+          "price": 8.99
+        },
+        {
+          "item": "Dish Soap",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Gala Apples",
+          "quantity": 1,
+          "price": 4.99
+        }
+      ],
+      "total_amount": 52.79,
+      "username": "remywright1026"
+    },
+    {
+      "name": "Charlie Lopez",
+      "order_id": 1027,
+      "date_of_purchase": "2026-09-29",
+      "items": [
+        {
+          "item": "Almonds",
+          "quantity": 4,
+          "price": 5.99
+        },
+        {
+          "item": "White Rice",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Toilet Paper",
+          "quantity": 3,
+          "price": 7.99
+        },
+        {
+          "item": "Black Beans",
+          "quantity": 1,
+          "price": 1.49
+        }
+      ],
+      "total_amount": 63.38,
+      "username": "charlielopez1027"
+    },
+    {
+      "name": "Robin Hill",
+      "order_id": 1028,
+      "date_of_purchase": "2026-10-13",
+      "items": [
+        {
+          "item": "Rolled Oats",
+          "quantity": 2,
+          "price": 3.79
+        },
+        {
+          "item": "Large Eggs",
+          "quantity": 2,
+          "price": 3.99
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 3,
+          "price": 1.99
+        },
+        {
+          "item": "Cheddar Cheese",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Bananas",
+          "quantity": 4,
+          "price": 0.69
+        }
+      ],
+      "total_amount": 31.27,
+      "username": "robinhill1028"
+    },
+    {
+      "name": "Jules Scott",
+      "order_id": 1029,
+      "date_of_purchase": "2026-10-06",
+      "items": [
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 2,
+          "price": 2.99
+        },
+        {
+          "item": "Carrots",
+          "quantity": 4,
+          "price": 2.49
+        },
+        {
+          "item": "Almonds",
+          "quantity": 2,
+          "price": 5.99
+        },
+        {
+          "item": "Black Pepper",
+          "quantity": 3,
+          "price": 3.99
+        },
+        {
+          "item": "Potato Chips",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Toothpaste",
+          "quantity": 3,
+          "price": 3.49
+        }
+      ],
+      "total_amount": 57.34,
+      "username": "julesscott1029"
+    },
+    {
+      "name": "Shiloh Green",
+      "order_id": 1030,
+      "date_of_purchase": "2026-10-05",
+      "items": [
+        {
+          "item": "Black Beans",
+          "quantity": 2,
+          "price": 1.49
+        },
+        {
+          "item": "Laundry Detergent",
+          "quantity": 3,
+          "price": 8.99
+        },
+        {
+          "item": "Seedless Grapes",
+          "quantity": 3,
+          "price": 5.99
+        },
+        {
+          "item": "Ground Coffee",
+          "quantity": 4,
+          "price": 9.99
+        },
+        {
+          "item": "Yellow Mustard",
+          "quantity": 3,
+          "price": 1.79
+        },
+        {
+          "item": "Carrots",
+          "quantity": 4,
+          "price": 2.49
+        },
+        {
+          "item": "Granulated Sugar",
+          "quantity": 1,
+          "price": 3.49
+        },
+        {
+          "item": "Hand Soap",
+          "quantity": 2,
+          "price": 2.99
+        },
+        {
+          "item": "Black Pepper",
+          "quantity": 4,
+          "price": 3.99
+        }
+      ],
+      "total_amount": 128.64,
+      "username": "shilohgreen1030"
+    },
+    {
+      "name": "Arden Adams",
+      "order_id": 1031,
+      "date_of_purchase": "2026-09-27",
+      "items": [
+        {
+          "item": "Bananas",
+          "quantity": 1,
+          "price": 0.69
+        },
+        {
+          "item": "Olive Oil",
+          "quantity": 3,
+          "price": 8.99
+        },
+        {
+          "item": "Broccoli",
+          "quantity": 4,
+          "price": 2.29
+        },
+        {
+          "item": "Potato Chips",
+          "quantity": 2,
+          "price": 3.49
+        }
+      ],
+      "total_amount": 43.8,
+      "username": "ardenadams1031"
+    },
+    {
+      "name": "Frankie Baker",
+      "order_id": 1032,
+      "date_of_purchase": "2026-09-28",
+      "items": [
+        {
+          "item": "Yellow Mustard",
+          "quantity": 2,
+          "price": 1.79
+        },
+        {
+          "item": "Broccoli",
+          "quantity": 4,
+          "price": 2.29
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 2,
+          "price": 1.99
+        },
+        {
+          "item": "Navel Oranges",
+          "quantity": 1,
+          "price": 4.99
+        }
+      ],
+      "total_amount": 21.71,
+      "username": "frankiebaker1032"
+    },
+    {
+      "name": "Micah Gonzalez",
+      "order_id": 1033,
+      "date_of_purchase": "2026-10-20",
+      "items": [
+        {
+          "item": "Yellow Onions",
+          "quantity": 3,
+          "price": 2.99
+        },
+        {
+          "item": "Canned Tuna",
+          "quantity": 3,
+          "price": 1.79
+        },
+        {
+          "item": "Table Salt",
+          "quantity": 2,
+          "price": 1.29
+        },
+        {
+          "item": "Toothpaste",
+          "quantity": 3,
+          "price": 3.49
+        }
+      ],
+      "total_amount": 27.39,
+      "username": "micahgonzalez1033"
+    },
+    {
+      "name": "Lennon Nelson",
+      "order_id": 1034,
+      "date_of_purchase": "2026-10-01",
+      "items": [
+        {
+          "item": "Hand Soap",
+          "quantity": 3,
+          "price": 2.99
+        },
+        {
+          "item": "All-Purpose Flour",
+          "quantity": 4,
+          "price": 4.29
+        },
+        {
+          "item": "Black Pepper",
+          "quantity": 1,
+          "price": 3.99
+        },
+        {
+          "item": "Canned Tuna",
+          "quantity": 4,
+          "price": 1.79
+        },
+        {
+          "item": "Gala Apples",
+          "quantity": 2,
+          "price": 4.99
+        },
+        {
+          "item": "Greek Yogurt",
+          "quantity": 4,
+          "price": 5.49
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 3,
+          "price": 1.99
+        }
+      ],
+      "total_amount": 75.19,
+      "username": "lennonnelson1034"
+    },
+    {
+      "name": "Marley Carter",
+      "order_id": 1035,
+      "date_of_purchase": "2026-10-03",
+      "items": [
+        {
+          "item": "Large Eggs",
+          "quantity": 3,
+          "price": 3.99
+        },
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 2,
+          "price": 2.99
+        },
+        {
+          "item": "Strawberry Jam",
+          "quantity": 1,
+          "price": 3.79
+        },
+        {
+          "item": "Broccoli",
+          "quantity": 4,
+          "price": 2.29
+        },
+        {
+          "item": "Dish Soap",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Almonds",
+          "quantity": 2,
+          "price": 5.99
+        },
+        {
+          "item": "Seedless Grapes",
+          "quantity": 4,
+          "price": 5.99
+        },
+        {
+          "item": "Yellow Mustard",
+          "quantity": 3,
+          "price": 1.79
+        },
+        {
+          "item": "Peanut Butter",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Black Beans",
+          "quantity": 4,
+          "price": 1.49
+        }
+      ],
+      "total_amount": 99.11,
+      "username": "marleycarter1035"
+    },
+    {
+      "name": "Noel Mitchell",
+      "order_id": 1036,
+      "date_of_purchase": "2026-10-09",
+      "items": [
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 1,
+          "price": 2.99
+        },
+        {
+          "item": "Ground Beef",
+          "quantity": 3,
+          "price": 6.99
+        },
+        {
+          "item": "Black Pepper",
+          "quantity": 3,
+          "price": 3.99
+        },
+        {
+          "item": "Honey",
+          "quantity": 4,
+          "price": 5.49
+        },
+        {
+          "item": "Dark Chocolate Bar",
+          "quantity": 1,
+          "price": 2.99
+        },
+        {
+          "item": "Toilet Paper",
+          "quantity": 4,
+          "price": 7.99
+        },
+        {
+          "item": "Baby Spinach",
+          "quantity": 1,
+          "price": 3.49
+        },
+        {
+          "item": "Yellow Mustard",
+          "quantity": 1,
+          "price": 1.79
+        },
+        {
+          "item": "Russet Potatoes",
+          "quantity": 1,
+          "price": 4.49
+        },
+        {
+          "item": "Laundry Detergent",
+          "quantity": 3,
+          "price": 8.99
+        }
+      ],
+      "total_amount": 129.58,
+      "username": "noelmitchell1036"
+    },
+    {
+      "name": "Rory Perez",
+      "order_id": 1037,
+      "date_of_purchase": "2026-10-07",
+      "items": [
+        {
+          "item": "Dark Chocolate Bar",
+          "quantity": 3,
+          "price": 2.99
+        },
+        {
+          "item": "Bananas",
+          "quantity": 2,
+          "price": 0.69
+        },
+        {
+          "item": "Peanut Butter",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Roma Tomatoes",
+          "quantity": 4,
+          "price": 2.49
+        },
+        {
+          "item": "Dish Soap",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Tomato Soup",
+          "quantity": 2,
+          "price": 1.99
+        }
+      ],
+      "total_amount": 45.23,
+      "username": "roryperez1037"
+    },
+    {
+      "name": "Sam Roberts",
+      "order_id": 1038,
+      "date_of_purchase": "2026-10-14",
+      "items": [
+        {
+          "item": "Ground Coffee",
+          "quantity": 3,
+          "price": 9.99
+        },
+        {
+          "item": "Laundry Detergent",
+          "quantity": 4,
+          "price": 8.99
+        },
+        {
+          "item": "Black Pepper",
+          "quantity": 2,
+          "price": 3.99
+        },
+        {
+          "item": "Bananas",
+          "quantity": 1,
+          "price": 0.69
+        },
+        {
+          "item": "Table Salt",
+          "quantity": 2,
+          "price": 1.29
+        }
+      ],
+      "total_amount": 77.18,
+      "username": "samroberts1038"
+    },
+    {
+      "name": "Tatum Turner",
+      "order_id": 1039,
+      "date_of_purchase": "2026-09-26",
+      "items": [
+        {
+          "item": "Orange Juice",
+          "quantity": 3,
+          "price": 4.49
+        },
+        {
+          "item": "Dark Chocolate Bar",
+          "quantity": 2,
+          "price": 2.99
+        },
+        {
+          "item": "Whole Milk",
+          "quantity": 1,
+          "price": 4.29
+        },
+        {
+          "item": "Mayonnaise",
+          "quantity": 4,
+          "price": 4.49
+        },
+        {
+          "item": "Sourdough Bread",
+          "quantity": 2,
+          "price": 4.99
+        },
+        {
+          "item": "Chicken Breast",
+          "quantity": 2,
+          "price": 5.49
+        },
+        {
+          "item": "Atlantic Salmon",
+          "quantity": 3,
+          "price": 12.99
+        },
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 4,
+          "price": 2.99
+        },
+        {
+          "item": "Diced Tomatoes",
+          "quantity": 2,
+          "price": 1.39
+        }
+      ],
+      "total_amount": 116.37,
+      "username": "tatumturner1039"
+    },
+    {
+      "name": "Wren Phillips",
+      "order_id": 1040,
+      "date_of_purchase": "2026-10-16",
+      "items": [
+        {
+          "item": "Whole Milk",
+          "quantity": 2,
+          "price": 4.29
+        },
+        {
+          "item": "Bananas",
+          "quantity": 2,
+          "price": 0.69
+        },
+        {
+          "item": "Hand Soap",
+          "quantity": 2,
+          "price": 2.99
+        },
+        {
+          "item": "Toothpaste",
+          "quantity": 1,
+          "price": 3.49
+        },
+        {
+          "item": "Navel Oranges",
+          "quantity": 2,
+          "price": 4.99
+        },
+        {
+          "item": "Salted Butter",
+          "quantity": 2,
+          "price": 4.49
+        },
+        {
+          "item": "Black Beans",
+          "quantity": 2,
+          "price": 1.49
+        },
+        {
+          "item": "Mayonnaise",
+          "quantity": 4,
+          "price": 4.49
+        },
+        {
+          "item": "Almonds",
+          "quantity": 2,
+          "price": 5.99
+        }
+      ],
+      "total_amount": 71.31,
+      "username": "wrenphillips1040"
+    },
+    {
+      "name": "River Campbell",
+      "order_id": 1041,
+      "date_of_purchase": "2026-10-09",
+      "items": [
+        {
+          "item": "All-Purpose Flour",
+          "quantity": 2,
+          "price": 4.29
+        },
+        {
+          "item": "Strawberry Jam",
+          "quantity": 3,
+          "price": 3.79
+        },
+        {
+          "item": "Peanut Butter",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Spaghetti",
+          "quantity": 3,
+          "price": 1.99
+        },
+        {
+          "item": "Bananas",
+          "quantity": 3,
+          "price": 0.69
+        }
+      ],
+      "total_amount": 41.95,
+      "username": "rivercampbell1041"
+    },
+    {
+      "name": "Dallas Parker",
+      "order_id": 1042,
+      "date_of_purchase": "2026-10-17",
+      "items": [
+        {
+          "item": "Greek Yogurt",
+          "quantity": 1,
+          "price": 5.49
+        },
+        {
+          "item": "Broccoli",
+          "quantity": 1,
+          "price": 2.29
+        },
+        {
+          "item": "Potato Chips",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Almonds",
+          "quantity": 2,
+          "price": 5.99
+        },
+        {
+          "item": "Yellow Onions",
+          "quantity": 4,
+          "price": 2.99
+        },
+        {
+          "item": "Yellow Mustard",
+          "quantity": 4,
+          "price": 1.79
+        },
+        {
+          "item": "Olive Oil",
+          "quantity": 1,
+          "price": 8.99
+        },
+        {
+          "item": "Large Eggs",
+          "quantity": 3,
+          "price": 3.99
+        },
+        {
+          "item": "White Rice",
+          "quantity": 1,
+          "price": 3.49
+        },
+        {
+          "item": "Hand Soap",
+          "quantity": 1,
+          "price": 2.99
+        }
+      ],
+      "total_amount": 73.3,
+      "username": "dallasparker1042"
+    },
+    {
+      "name": "Justice Evans",
+      "order_id": 1043,
+      "date_of_purchase": "2026-10-17",
+      "items": [
+        {
+          "item": "Gala Apples",
+          "quantity": 1,
+          "price": 4.99
+        },
+        {
+          "item": "Tomato Soup",
+          "quantity": 3,
+          "price": 1.99
+        },
+        {
+          "item": "Rolled Oats",
+          "quantity": 2,
+          "price": 3.79
+        },
+        {
+          "item": "Roma Tomatoes",
+          "quantity": 1,
+          "price": 2.49
+        },
+        {
+          "item": "Seedless Grapes",
+          "quantity": 1,
+          "price": 5.99
+        },
+        {
+          "item": "Baby Spinach",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Peanut Butter",
+          "quantity": 1,
+          "price": 3.49
+        }
+      ],
+      "total_amount": 44.47,
+      "username": "justiceevans1043"
+    },
+    {
+      "name": "Cory Edwards",
+      "order_id": 1044,
+      "date_of_purchase": "2026-10-06",
+      "items": [
+        {
+          "item": "Yellow Mustard",
+          "quantity": 2,
+          "price": 1.79
+        },
+        {
+          "item": "Ground Beef",
+          "quantity": 1,
+          "price": 6.99
+        },
+        {
+          "item": "Atlantic Salmon",
+          "quantity": 1,
+          "price": 12.99
+        },
+        {
+          "item": "Strawberry Jam",
+          "quantity": 1,
+          "price": 3.79
+        },
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 4,
+          "price": 2.99
+        },
+        {
+          "item": "Rolled Oats",
+          "quantity": 2,
+          "price": 3.79
+        },
+        {
+          "item": "Honey",
+          "quantity": 3,
+          "price": 5.49
+        },
+        {
+          "item": "Toothpaste",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Tomato Soup",
+          "quantity": 1,
+          "price": 1.99
+        },
+        {
+          "item": "Diced Tomatoes",
+          "quantity": 3,
+          "price": 1.39
+        }
+      ],
+      "total_amount": 76.5,
+      "username": "coryedwards1044"
+    },
+    {
+      "name": "Lee Collins",
+      "order_id": 1045,
+      "date_of_purchase": "2026-10-17",
+      "items": [
+        {
+          "item": "Dish Soap",
+          "quantity": 1,
+          "price": 3.49
+        },
+        {
+          "item": "Toilet Paper",
+          "quantity": 4,
+          "price": 7.99
+        },
+        {
+          "item": "Yellow Onions",
+          "quantity": 1,
+          "price": 2.99
+        },
+        {
+          "item": "Hand Soap",
+          "quantity": 2,
+          "price": 2.99
+        },
+        {
+          "item": "Strawberry Jam",
+          "quantity": 3,
+          "price": 3.79
+        },
+        {
+          "item": "Strawberries",
+          "quantity": 1,
+          "price": 4.49
+        },
+        {
+          "item": "Black Pepper",
+          "quantity": 3,
+          "price": 3.99
+        }
+      ],
+      "total_amount": 72.25,
+      "username": "leecollins1045"
+    },
+    {
+      "name": "Andy Stewart",
+      "order_id": 1046,
+      "date_of_purchase": "2026-09-30",
+      "items": [
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 3,
+          "price": 2.99
+        },
+        {
+          "item": "All-Purpose Flour",
+          "quantity": 3,
+          "price": 4.29
+        },
+        {
+          "item": "Cheddar Cheese",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Navel Oranges",
+          "quantity": 3,
+          "price": 4.99
+        },
+        {
+          "item": "Peanut Butter",
+          "quantity": 1,
+          "price": 3.49
+        },
+        {
+          "item": "Yellow Onions",
+          "quantity": 3,
+          "price": 2.99
+        },
+        {
+          "item": "Black Pepper",
+          "quantity": 1,
+          "price": 3.99
+        },
+        {
+          "item": "Orange Juice",
+          "quantity": 1,
+          "price": 4.49
+        }
+      ],
+      "total_amount": 68.22,
+      "username": "andystewart1046"
+    },
+    {
+      "name": "Chris Sanchez",
+      "order_id": 1047,
+      "date_of_purchase": "2026-10-21",
+      "items": [
+        {
+          "item": "Broccoli",
+          "quantity": 4,
+          "price": 2.29
+        },
+        {
+          "item": "Peanut Butter",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Dish Soap",
+          "quantity": 3,
+          "price": 3.49
+        },
+        {
+          "item": "Hand Soap",
+          "quantity": 3,
+          "price": 2.99
+        },
+        {
+          "item": "Black Pepper",
+          "quantity": 3,
+          "price": 3.99
+        },
+        {
+          "item": "Strawberry Jam",
+          "quantity": 2,
+          "price": 3.79
+        }
+      ],
+      "total_amount": 58.62,
+      "username": "chrissanchez1047"
+    },
+    {
+      "name": "Devin Morris",
+      "order_id": 1048,
+      "date_of_purchase": "2026-10-02",
+      "items": [
+        {
+          "item": "White Rice",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Granulated Sugar",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Broccoli",
+          "quantity": 2,
+          "price": 2.29
+        },
+        {
+          "item": "Dish Soap",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Atlantic Salmon",
+          "quantity": 3,
+          "price": 12.99
+        },
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 3,
+          "price": 2.99
+        },
+        {
+          "item": "Toilet Paper",
+          "quantity": 3,
+          "price": 7.99
+        },
+        {
+          "item": "Cheddar Cheese",
+          "quantity": 4,
+          "price": 3.49
+        }
+      ],
+      "total_amount": 118.37,
+      "username": "devinmorris1048"
+    },
+    {
+      "name": "Kerry Rogers",
+      "order_id": 1049,
+      "date_of_purchase": "2026-10-07",
+      "items": [
+        {
+          "item": "Chicken Breast",
+          "quantity": 1,
+          "price": 5.49
+        },
+        {
+          "item": "Salted Butter",
+          "quantity": 2,
+          "price": 4.49
+        },
+        {
+          "item": "Whole Milk",
+          "quantity": 1,
+          "price": 4.29
+        },
+        {
+          "item": "Mayonnaise",
+          "quantity": 3,
+          "price": 4.49
+        }
+      ],
+      "total_amount": 32.23,
+      "username": "kerryrogers1049"
+    },
+    {
+      "name": "Shawn Reed",
+      "order_id": 1050,
+      "date_of_purchase": "2026-09-24",
+      "items": [
+        {
+          "item": "Mayonnaise",
+          "quantity": 3,
+          "price": 4.49
+        },
+        {
+          "item": "Sourdough Bread",
+          "quantity": 3,
+          "price": 4.99
+        },
+        {
+          "item": "Whole Milk",
+          "quantity": 3,
+          "price": 4.29
+        },
+        {
+          "item": "Roma Tomatoes",
+          "quantity": 4,
+          "price": 2.49
+        },
+        {
+          "item": "Potato Chips",
+          "quantity": 2,
+          "price": 3.49
+        },
+        {
+          "item": "Tomato Ketchup",
+          "quantity": 1,
+          "price": 2.99
+        },
+        {
+          "item": "White Rice",
+          "quantity": 4,
+          "price": 3.49
+        },
+        {
+          "item": "Green Tea",
+          "quantity": 1,
+          "price": 3.49
+        },
+        {
+          "item": "Olive Oil",
+          "quantity": 1,
+          "price": 8.99
+        },
+        {
+          "item": "Gala Apples",
+          "quantity": 3,
+          "price": 4.99
+        }
+      ],
+      "total_amount": 102.65,
+      "username": "shawnreed1050"
+    }
+  ]
+}

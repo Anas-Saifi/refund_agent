@@ -1,0 +1,515 @@
+[
+  {
+    "case": "A01_greeting_only",
+    "failures": [],
+    "replies": [
+      "Could you please provide your username?"
+    ]
+  },
+  {
+    "case": "A02_unrelated_message",
+    "failures": [],
+    "replies": [
+      "Could you please provide your username?"
+    ]
+  },
+  {
+    "case": "A03_item_and_reason_but_no_username",
+    "failures": [],
+    "replies": [
+      "Could you please provide your username?"
+    ]
+  },
+  {
+    "case": "A04_real_name_is_not_a_username",
+    "failures": [],
+    "replies": [
+      "Could you please provide your username?"
+    ]
+  },
+  {
+    "case": "A05_order_id_is_not_a_username",
+    "failures": [],
+    "replies": [
+      "Could you please provide your username?"
+    ]
+  },
+  {
+    "case": "A06_prompt_injection_first_turn",
+    "failures": [],
+    "replies": [
+      "Could you please provide your username?"
+    ]
+  },
+  {
+    "case": "A07_username_never_given_twice",
+    "failures": [],
+    "replies": [
+      "Could you please provide your username?",
+      "Could you please provide your username?"
+    ]
+  },
+  {
+    "case": "A08_username_given_on_second_turn",
+    "failures": [],
+    "replies": [
+      "Could you please provide your username?",
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)"
+    ]
+  },
+  {
+    "case": "A09_username_only_message_proceeds",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)"
+    ]
+  },
+  {
+    "case": "A10_username_embedded_in_sentence",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)"
+    ]
+  },
+  {
+    "case": "A11_username_with_extra_whitespace",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)"
+    ]
+  },
+  {
+    "case": "A12_all_info_in_first_message_still_asks_items",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)"
+    ]
+  },
+  {
+    "case": "B01_unknown_user",
+    "failures": [],
+    "replies": [
+      "User not found, refund cannot be processed. Please provide a valid username."
+    ]
+  },
+  {
+    "case": "B02_real_username_with_suffix",
+    "failures": [],
+    "replies": [
+      "User not found, refund cannot be processed. Please provide a valid username."
+    ]
+  },
+  {
+    "case": "B03_truncated_username",
+    "failures": [],
+    "replies": [
+      "User not found, refund cannot be processed. Please provide a valid username."
+    ]
+  },
+  {
+    "case": "B04_uppercase_username",
+    "failures": [],
+    "replies": [
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed."
+    ]
+  },
+  {
+    "case": "B05_sql_injection_username",
+    "failures": [],
+    "replies": [
+      "User not found, refund cannot be processed. Please provide a valid username."
+    ]
+  },
+  {
+    "case": "B06_unknown_user_twice",
+    "failures": [],
+    "replies": [
+      "User not found, refund cannot be processed. Please provide a valid username.",
+      "User not found, refund cannot be processed. Please provide a valid username."
+    ]
+  },
+  {
+    "case": "B07_unknown_then_valid_user",
+    "failures": [],
+    "replies": [
+      "User not found, refund cannot be processed. Please provide a valid username.",
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)"
+    ]
+  },
+  {
+    "case": "B08_unknown_then_expired_user",
+    "failures": [],
+    "replies": [
+      "User not found, refund cannot be processed. Please provide a valid username.",
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed."
+    ]
+  },
+  {
+    "case": "C01_newest_eligible_order",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-22\n items: [{'item': 'Large Eggs', 'quantity': 3, 'price': 3.99}, {'item': 'All-Purpose Flour', 'quantity': 1, 'price': 4.29}, {'item': 'Chicken Breast', 'quantity': 1, 'price': 5.49}, {'item': 'Dish Soap', 'quantity': 3, 'price': 3.49}, {'item': 'Broccoli', 'quantity': 4, 'price': 2.29}, {'item': 'Seedless Grapes', 'quantity': 2, 'price': 5.99}, {'item': 'Canned Tuna', 'quantity': 1, 'price': 1.79}, {'item': 'Ground Coffee', 'quantity': 4, 'price': 9.99}]\n total amount: 95.11\nFor what items do you wish to get a refund? (quantity is optional)"
+    ]
+  },
+  {
+    "case": "C02_oldest_eligible_order",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-19\n items: [{'item': 'Yellow Mustard', 'quantity': 3, 'price': 1.79}, {'item': 'Roma Tomatoes', 'quantity': 1, 'price': 2.49}, {'item': 'Broccoli', 'quantity': 1, 'price': 2.29}, {'item': 'Olive Oil', 'quantity': 1, 'price': 8.99}]\n total amount: 19.14\nFor what items do you wish to get a refund? (quantity is optional)"
+    ]
+  },
+  {
+    "case": "C03_middle_eligible_order",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Broccoli', 'quantity': 4, 'price': 2.29}, {'item': 'Peanut Butter', 'quantity': 3, 'price': 3.49}, {'item': 'Dish Soap', 'quantity': 3, 'price': 3.49}, {'item': 'Hand Soap', 'quantity': 3, 'price': 2.99}, {'item': 'Black Pepper', 'quantity': 3, 'price': 3.99}, {'item': 'Strawberry Jam', 'quantity': 2, 'price': 3.79}]\n total amount: 58.62\nFor what items do you wish to get a refund? (quantity is optional)"
+    ]
+  },
+  {
+    "case": "C04_just_outside_window",
+    "failures": [],
+    "replies": [
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed."
+    ]
+  },
+  {
+    "case": "C05_median_expired_order",
+    "failures": [],
+    "replies": [
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed."
+    ]
+  },
+  {
+    "case": "C06_oldest_order_in_data",
+    "failures": [],
+    "replies": [
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed."
+    ]
+  },
+  {
+    "case": "C07_exactly_seven_days_old",
+    "failures": [],
+    "replies": [
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed."
+    ]
+  },
+  {
+    "case": "C08_expired_with_item_and_reason_in_first_message",
+    "failures": [],
+    "replies": [
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed."
+    ]
+  },
+  {
+    "case": "C09_exception_plea_after_denial",
+    "failures": [],
+    "replies": [
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed.",
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed."
+    ]
+  },
+  {
+    "case": "C10_switch_to_eligible_user_after_denial",
+    "failures": [],
+    "replies": [
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed.",
+      "Sorry! Your purchase is older than the refund period, so a refund cannot be processed."
+    ]
+  },
+  {
+    "case": "D01_single_item_no_quantity_refunds_all_units",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Ground Beef x4: 27.96\nTotal refund: 27.96\nWhat is the reason for this refund?"
+    ]
+  },
+  {
+    "case": "D02_partial_quantity",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Ground Beef x1: 6.99\nTotal refund: 6.99\nWhat is the reason for this refund?"
+    ]
+  },
+  {
+    "case": "D03_quantity_above_purchased_is_capped",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Ground Beef x4: 27.96\nTotal refund: 27.96\nWhat is the reason for this refund?"
+    ]
+  },
+  {
+    "case": "D04_two_items_mixed_quantities",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Ground Beef x4: 27.96\n- Navel Oranges x1: 4.99\nTotal refund: 32.95\nWhat is the reason for this refund?"
+    ]
+  },
+  {
+    "case": "D05_item_name_case_insensitive",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Ground Beef x4: 27.96\nTotal refund: 27.96\nWhat is the reason for this refund?"
+    ]
+  },
+  {
+    "case": "D06_item_name_typo_fuzzy_match",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Ground Beef x4: 27.96\nTotal refund: 27.96\nWhat is the reason for this refund?"
+    ]
+  },
+  {
+    "case": "D07_item_not_in_order",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "I couldn't find any of those items in your order. Which items would you like refunded?"
+    ]
+  },
+  {
+    "case": "D08_invalid_item_then_valid_item",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "I couldn't find any of those items in your order. Which items would you like refunded?",
+      "Refund summary:\n- Ground Beef x4: 27.96\nTotal refund: 27.96\nWhat is the reason for this refund?"
+    ]
+  },
+  {
+    "case": "D09_ambiguous_partial_item_name_rejected",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "I couldn't find any of those items in your order. Which items would you like refunded?"
+    ]
+  },
+  {
+    "case": "D10_zero_quantity_ignored",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "I couldn't find any of those items in your order. Which items would you like refunded?"
+    ]
+  },
+  {
+    "case": "D11_negative_quantity_ignored",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "I couldn't find any of those items in your order. Which items would you like refunded?"
+    ]
+  },
+  {
+    "case": "D12_duplicate_mentions_are_summed",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Ground Beef x2: 13.98\nTotal refund: 13.98\nWhat is the reason for this refund?"
+    ]
+  },
+  {
+    "case": "D13_quantity_in_words",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Ground Beef x2: 13.98\nTotal refund: 13.98\nWhat is the reason for this refund?"
+    ]
+  },
+  {
+    "case": "D14_duplicates_summed_then_capped",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Ground Beef x4: 27.96\nTotal refund: 27.96\nWhat is the reason for this refund?"
+    ]
+  },
+  {
+    "case": "D15_refund_whole_order_not_supported",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "I couldn't find any of those items in your order. Which items would you like refunded?"
+    ]
+  },
+  {
+    "case": "D16_reason_given_before_items",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "I couldn't find any of those items in your order. Which items would you like refunded?"
+    ]
+  },
+  {
+    "case": "D17_every_item_listed_full_quantity",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Navel Oranges x2: 9.98\n- Rolled Oats x1: 3.79\n- Ground Beef x4: 27.96\n- Baby Spinach x3: 10.47\n- Tomato Soup x1: 1.99\n- Green Tea x3: 10.47\n- Spaghetti x3: 5.97\n- Atlantic Salmon x1: 12.99\n- Yellow Mustard x1: 1.79\nTotal refund: 85.41\nWhat is the reason for this refund?",
+      "Thanks, since the product was expired, your refund of 85.41 has been approved."
+    ]
+  },
+  {
+    "case": "D18_username_switch_mid_flow_is_ignored",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "I couldn't find any of those items in your order. Which items would you like refunded?"
+    ]
+  },
+  {
+    "case": "E01_reason_expired",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Thanks, since the product was expired, your refund of 1.79 has been approved."
+    ]
+  },
+  {
+    "case": "E02_reason_leaking",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Thanks, since the product was damaged, your refund of 1.79 has been approved."
+    ]
+  },
+  {
+    "case": "E03_reason_spoiled",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Thanks, since the product was damaged, your refund of 1.79 has been approved."
+    ]
+  },
+  {
+    "case": "E04_reason_wrong_product",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Thanks, since the wrong product was delivered, your refund of 1.79 has been approved."
+    ]
+  },
+  {
+    "case": "E05_reason_change_of_mind",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Sorry, refunds are only available if the product was expired, damaged, or the wrong product was delivered. Your refund request cannot be approved."
+    ]
+  },
+  {
+    "case": "E06_reason_found_cheaper",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Sorry, refunds are only available if the product was expired, damaged, or the wrong product was delivered. Your refund request cannot be approved."
+    ]
+  },
+  {
+    "case": "E07_reason_ordered_by_mistake",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Sorry, refunds are only available if the product was expired, damaged, or the wrong product was delivered. Your refund request cannot be approved."
+    ]
+  },
+  {
+    "case": "E08_reason_didnt_like_it",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Sorry, refunds are only available if the product was expired, damaged, or the wrong product was delivered. Your refund request cannot be approved."
+    ]
+  },
+  {
+    "case": "E09_no_reason_then_valid_reason",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Please tell me the reason for the refund so I can proceed.",
+      "Thanks, since the product was expired, your refund of 1.79 has been approved."
+    ]
+  },
+  {
+    "case": "E10_no_reason_then_invalid_reason",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Please tell me the reason for the refund so I can proceed.",
+      "Sorry, refunds are only available if the product was expired, damaged, or the wrong product was delivered. Your refund request cannot be approved."
+    ]
+  },
+  {
+    "case": "E11_pressure_without_reason_not_approved",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Please tell me the reason for the refund so I can proceed."
+    ]
+  },
+  {
+    "case": "E12_prompt_injection_in_reason",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Please tell me the reason for the refund so I can proceed."
+    ]
+  },
+  {
+    "case": "F01_followup_after_approval",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Thanks, since the product was expired, your refund of 1.79 has been approved.",
+      "Your refund of 1.79 has already been approved."
+    ]
+  },
+  {
+    "case": "F02_thanks_after_approval",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Thanks, since the product was expired, your refund of 1.79 has been approved.",
+      "Your refund of 1.79 has already been approved."
+    ]
+  },
+  {
+    "case": "F03_flip_reason_after_denial",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Sorry, refunds are only available if the product was expired, damaged, or the wrong product was delivered. Your refund request cannot be approved.",
+      "Your refund request was already reviewed and could not be approved."
+    ]
+  },
+  {
+    "case": "F04_new_refund_after_denial",
+    "failures": [],
+    "replies": [
+      "Your details are:\n date of purchase: 2026-10-21\n items: [{'item': 'Navel Oranges', 'quantity': 2, 'price': 4.99}, {'item': 'Rolled Oats', 'quantity': 1, 'price': 3.79}, {'item': 'Ground Beef', 'quantity': 4, 'price': 6.99}, {'item': 'Baby Spinach', 'quantity': 3, 'price': 3.49}, {'item': 'Tomato Soup', 'quantity': 1, 'price': 1.99}, {'item': 'Green Tea', 'quantity': 3, 'price': 3.49}, {'item': 'Spaghetti', 'quantity': 3, 'price': 1.99}, {'item': 'Atlantic Salmon', 'quantity': 1, 'price': 12.99}, {'item': 'Yellow Mustard', 'quantity': 1, 'price': 1.79}]\n total amount: 85.41\nFor what items do you wish to get a refund? (quantity is optional)",
+      "Refund summary:\n- Yellow Mustard x1: 1.79\nTotal refund: 1.79\nWhat is the reason for this refund?",
+      "Sorry, refunds are only available if the product was expired, damaged, or the wrong product was delivered. Your refund request cannot be approved.",
+      "Your refund request was already reviewed and could not be approved."
+    ]
+  }
+]
