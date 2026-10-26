@@ -17,8 +17,6 @@ class RefundApp {
     this.currentStageBadge = document.getElementById("currentStageBadge");
     this.chipsList = document.getElementById("chipsList");
     this.resetChatBtn = document.getElementById("resetChatBtn");
-    this.apiStatusText = document.getElementById("apiStatusText");
-    this.apiStatusBadge = document.getElementById("apiStatusBadge");
 
     this.init();
   }
@@ -29,7 +27,6 @@ class RefundApp {
 
   init() {
     this.activeThreadIdEl.textContent = this.threadId;
-    this.checkApiHealth();
     this.setupEventListeners();
     this.renderSuggestionChips();
   }
@@ -46,21 +43,6 @@ class RefundApp {
     this.resetChatBtn.addEventListener("click", () => {
       this.resetSession();
     });
-  }
-
-  async checkApiHealth() {
-    try {
-      const res = await fetch("/health");
-      if (res.ok) {
-        const data = await res.json();
-        this.apiStatusText.textContent = `Online • v${data.version}`;
-        this.apiStatusBadge.classList.add("status-online");
-      } else {
-        this.apiStatusText.textContent = "API Error";
-      }
-    } catch (err) {
-      this.apiStatusText.textContent = "Connecting...";
-    }
   }
 
   selectCustomer(username, name, isEligible) {
